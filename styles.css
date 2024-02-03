@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+main {
+    background-attachment: fixed;
+    background-image: url("./images/background-pattern-desktop.svg");
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+    max-height: 50vh;
+}
+
+.container {
+    margin-top: 20vh;
+    height: 60vh;
+    width: 35vw;
+    background-color: #fad2d2;
+    border: none;
+    border-radius: 5px;
+    color: #2f1533;
+    overflow: auto;
+    z-index: 2;
+}
+
+.title {
+    padding: 20px;
+    display: flex;
+    justify-content: left;
+    gap: 15px;
+}
+
+.title h1 {
+    font-size: 50px;
+}
+
+.accordion {
+    padding: 0 25px;
+}
+
+.p1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.p1 p {
+    font-size: 16px;
+    padding-top: 4px;
+    font-weight: bolder;
+}
+
+.p1 p:hover {
+    color: hsl(293, 33%, 41%);
+}
+
+.accordion img {
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.panel {
+    font-weight: 400;
+    color: #222;
+    gap: 2px;
+    word-spacing: 1px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+/* Responsive Styles */
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90vw;
+        margin: auto;
+    }
+
+    .title h1 {
+        font-size: 40px;
+    }
+
+    .p1 p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 95vw;
+    }
+
+    .title h1 {
+        font-size: 30px;
+    }
+
+    .p1 p {
+        font-size: 12px;
+    }
+}
